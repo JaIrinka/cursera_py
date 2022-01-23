@@ -1,5 +1,9 @@
 # *****************************
 #           ИСКЛЮЧЕНИЯ
+#
+# запуск реквестера:
+# python3 my_3_exceptions.py http://github.com
+#
 # https://docs.python.org/3/tutorial/errors.html
 # https://docs.python.org/3/library/exceptions.html
 # *****************************
@@ -42,6 +46,6 @@ def exceptions_ex1():
             break
 
 
-if __name__ == "__main__":
-    requester()
-    #exceptions_ex1()
+#exceptions_ex1()
+# если запускаем реквестор, эксцепшен лучше закомментить и наоборот
+requester()

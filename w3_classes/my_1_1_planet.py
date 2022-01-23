@@ -14,7 +14,7 @@ class Human:
         self._age = age
 
     def __repr__(self):
-        print('__str__ method')
+        print('__repr__ method')
         return self._name
 
     # когда-нибудь тут может измениться код! Говорить будем не принтом, а по-нормальному, например :)
@@ -58,20 +58,29 @@ class Planet:
     #        return self.name
 
 
-# print(Planet)
-# print(dir(Planet))
+print(Planet)
+print(dir(Planet))
+print('------------------------------------1')
 
 earth = Planet("Earth")
-# mars = Planet("Mars")
+mars = Planet("Mars")
+print('------------------------------------2')
 
-# print(earth)
-# print(earth, mars)
-# print(dir(mars))
-# print(earth.__dict__)
-# print(Planet.__dict__)
+print(earth)
+print(earth, mars)
+print('------------------------------------3')
+
+print(dir(mars))
+print('------------------------------------4')
+print(earth.__dict__)
+print('------------------------------------5')
+print(Planet.__dict__)
+print('------------------------------------6')
 
 person1 = Human("Uasya")
 earth.add_human(person1)
 print(earth.population)
+print('------------------------------------7')
+
 person1.say_name()
 person1.say_your_old()

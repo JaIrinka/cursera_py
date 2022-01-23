@@ -51,5 +51,6 @@ class ExDog(Dog):
 if __name__ == "__main__":
     dog = ExDog('Sharry', 'Toy', exporter=ExportXML())
     print(dog.export())
+    print('------------------------------------')
     dog_2 = ExDog('Tusic', 'Toy-2', exporter=ExportJSON())
     print(dog_2.export())

@@ -41,10 +41,15 @@ class WoolenDog(Dog, ExportJSON):
 
 my_dog = ExDog('Sharic', 'Haskey')
 my_tax = WoolenDog('Zuchka', 'taxa')
-#my_dog = Dog('Sharic', 'Haskey')
+my_dog2 = Dog('Sharicus', 'Haskey')
 print(my_dog.say())
+print(my_dog2.say())
+print('------------------------------------1')
 print(my_dog.to_json())
 print(my_tax.to_json())
+print('------------------------------------2')
 
-#print(dir(ExDog))
-#print(ExDog.__mro__)
+print(dir(ExDog))
+print('------------------------------------3')
+print(ExDog.__mro__)
+print('------------------------------------4')
