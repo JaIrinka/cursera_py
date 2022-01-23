@@ -62,6 +62,7 @@ class Logger:
         self.filrname = filrname
 
     def __call__(self, func):
+        """ так делается обычный класс-декоратор """
         def wrapped(*args, **kwargs):
             with open(self.filrname, 'a') as f:
                 f.write("Oh Danny boy...\n")

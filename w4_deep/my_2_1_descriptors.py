@@ -1,5 +1,6 @@
 # *****************************
 #        ДЕСКРИПТОРЫ
+# https://docs.python.org/3/howto/descriptor.html
 # *****************************
 
 
@@ -32,10 +33,6 @@ class Value:
 class ImportantValue:
     def __init__(self, amount):
         self.amount = amount
-
-    @staticmethod
-    def _prepare_value(value):
-        return value * 10
 
     def __get__(self, instance, owner):
         return self.amount

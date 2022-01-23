@@ -1,5 +1,4 @@
 from solution_1 import FileReader
-from solution import *
 
 
 def test_2():
